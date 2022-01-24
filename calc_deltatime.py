@@ -80,7 +80,7 @@ def calc(epoch: list, start, end):
     print()
 
     mean = delta_time / epoch_num
-    print(f"1epochあたりの平均：\n{mean}\n{format_deltatime(mean)}\n\n")
+    print(f"1epochあたりの平均：\n{mean.seconds / 60:.2f}\n{format_deltatime(mean)}")
 
 
 if __name__ == "__main__":
